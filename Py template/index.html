@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Weekly To-Do List</h1>
+    <div class="day" id="monday">
+        <h2>Monday</h2>
+        <div class="activity">
+            <input type="checkbox" id="mon1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="mon2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="mon3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <div class="day" id="tuesday">
+        <h2>Tuesday</h2>
+        <div class="activity">
+            <input type="checkbox" id="tue1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="tue2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="tue3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <div class="day" id="wednesday">
+        <h2>Wednesday</h2>
+        <div class="activity">
+            <input type="checkbox" id="wed1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="wed2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="wed3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <div class="day" id="thursday">
+        <h2>Thursday</h2>
+        <div class="activity">
+            <input type="checkbox" id="thu1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="thu2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="thu3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <div class="day" id="friday">
+        <h2>Friday</h2>
+        <div class="activity">
+            <input type="checkbox" id="fri1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="fri2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="fri3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <div class="day" id="saturday">
+        <h2>Saturday</h2>
+        <div class="activity">
+            <input type="checkbox" id="sat1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="sat2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="sat3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <div class="day" id="sunday">
+        <h2>Sunday</h2>
+        <div class="activity">
+            <input type="checkbox" id="sun1">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="sun2">
+            <input type="text" placeholder="Enter activity">
+        </div>
+        <div class="activity">
+            <input type="checkbox" id="sun3">
+            <input type="text" placeholder="Enter activity">
+        </div>
+    </div>
+    <script>
+        // Add event listeners to checkboxes to toggle completed class
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const activity = this.parentElement;
+                if (this.checked) {
+                    activity.classList.add('completed');
+                } else {
+                    activity.classList.remove('completed');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
