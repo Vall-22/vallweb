@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valerian</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+    <h1>VALERIAN</h1>
+    <div class="search-container">
+        <input type="text" placeholder="search..." class="search-bar">
+        <button type="submit">search</button>
+    </div>
+
+
+    <div class="main-wrapper">
+        <div class="top">
+            <nav class="top_menu">
+                <ul>
+                    <li><a onclick="showSection('home')">Home</a></li>
+                    <li><a onclick="showSection('women')">Women</a></li>
+                    <li><a onclick="showSection('men')">Men</a></li>
+                    <li><a onclick="showSection('kids')">Kids</a></li>
+                    <li><a onclick="showSection('shop')">Shop with us</a></li>
+                    <li><a onclick="showSection('about')">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="Address">
+            <h2>Visit us</h2>
+            <p><strong>Address:</strong>Lang'ata-00200, Nairobi City, Kenya</p>
+            <p><strong>Phone:</strong> (+254) 707244400</p>
+            <p><strong>Email:</strong> vallentracy@gmail.com</p>
+        </section>
+
+
+        <section id="home" class="Home">
+            <div class="overlay"></div>
+            <div class="login">
+                <h2>Login</h2>
+
+                <form>
+
+                    <label for="email">Enter email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" autocomplete="on" required>
+                    <br>
+                    <label for="password">Enter password:</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="xxxxxxxxxxxx" required>
+                    <br>
+                    <label for="phone">Enter phone number:</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+                    <button type="submit">Login</button>
+                    <br>
+
+                </form>
+            </div>
+
+
+        </section>
+
+
+        <section id="women" class="women-section">
+            <h2 class="Section-title">Women's Collection</h2>
+            <div class="collection">
+                <div class="item">
+                    <img src="images/dress.jpg" alt="Dress">
+                    <h3>Casual red dress</h3>
+                    <p class="price">ksh 1,000</p>
+                </div>
+                <div>
+                    <img src="images/Ankara skirt.jpeg" alt="Ankara skirt">
+                    <h3>Ankara skirt</h3>
+                    <p class="price">ksh 1,200</p>
+                </div>
+                <div>
+                    <img src="images/Ankara.jpeg" alt="African">
+                    <h3>Ankara</h3>
+                    <p class="price">ksh 1,200</p>
+                </div>
+                <div>
+                    <img src="images/corporate.jpg" alt="Corporate wear">
+                    <h3>corporate fit</h3>
+                    <p class="price">ksh 7,000</p>
+                </div>
+                <div>
+                    <img src="images/formal skirt.jpg" alt="f skirt">
+                    <h3>Formal skirt</h3>
+                    <p class="price">ksh 1,000</p>
+                </div>
+                <div>
+                    <img src="images/office wear.jpg" alt="office wear">
+                    <h3>Office wear</h3>
+                    <p class="price">ksh 6,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="men" class="men-section">
+            <h2 class="Section-title">Men's Collection</h2>
+            <div class="collection">
+                <div class="item">
+                    <img src="images/pal jeans.jpg" alt="Pal jeans">
+                    <h3>Pal jeans</h3>
+                    <p class="price">ksh 2,500</p>
+                </div>
+                <div>
+                    <img src="images/pantalon.webp" alt="Pantalon">
+                    <h3>Pantalon</h3>
+                    <p class="price">ksh 3,000</p>
+                </div>
+                <div>
+                    <img src="images/trouser.jpg" alt="Trouser">
+                    <h3>Trouser</h3>
+                    <p class="price">ksh 2,800</p>
+                </div>
+                <div>
+                    <img src="images/wide leg.webp" alt="Wide leg">
+                    <h3>Wide leg</h3>
+                    <p class="price">ksh 3,200</p>
+                </div>
+                <div>
+                    <img src="images/workwear.jpg" alt="Workwear">
+                    <h3>Workwear</h3>
+                    <p class="price">ksh 4,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kids" class="kids-section">
+            <h2 class="Section-title">Kids' Collection</h2>
+            <div class="collection">
+                <div class="item">
+                    <img src="images/purple dress.jpeg" alt="Purple dress">
+                    <h3>Purple dress</h3>
+                    <p class="price">ksh 800</p>
+                </div>
+                <div>
+                    <img src="images/red skirt.jpg" alt="Red skirt">
+                    <h3>Red skirt</h3>
+                    <p class="price">ksh 700</p>
+                </div>
+                <div>
+                    <img src="images/Winter fit.jpg" alt="Winter fit">
+                    <h3>Winter fit</h3>
+                    <p class="price">ksh 1,500</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="shop-section">
+            <h2 class="Section-title">Shop with Us</h2>
+            <p>Welcome to Valerian! Discover our wide range of fashion items for women, men, and kids. Enjoy shopping with us.</p>
+            <div class="collection">
+                <div class="item">
+                    <img src="images/fashion.png" alt="Fashion">
+                    <h3>Fashion Essentials</h3>
+                    <p class="price">From ksh 500</p>
+                </div>
+                <div>
+                    <img src="images/Palazo Afri.jpg" alt="Palazo Afri">
+                    <h3>Palazo Afri</h3>
+                    <p class="price">ksh 1,800</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Valerian is a fashion store located in Nairobi, Kenya. We offer a variety of clothing for all ages and occasions. Our mission is to provide quality fashion at affordable prices.</p>
+            <p>Contact us at vallentracy@gmail.com or visit our store at Lang'ata-00200.</p>
+        </section>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Initially show home section
+        showSection('home');
+    </script>
+</body>
+
+</html>

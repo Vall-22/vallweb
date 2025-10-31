@@ -1,0 +1,177 @@
+    h1 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serift;
+        font-size: 3rem;
+        color: gold;
+        font-weight: unset;
+        background-color: #3c153b;
+    }
+    
+    .body {
+        font-family: verdana;
+        font-size: 16px;
+        background-color: whitesmoke
+    }
+    
+    .body {
+        display: block;
+        margin: 8px;
+    }
+    
+    .top_menu ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        background-color: #3c153b;
+        gap: 40px;
+    }
+    
+    .top_menu ul li a {
+        text-decoration: solid;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        transition: color 0.3s ease border-bottom 0.3 ease;
+        padding-bottom: 4px;
+    }
+    
+    .top_menu li a:hover {
+        color: gold;
+        border-bottom: 2px solid goldenrod;
+    }
+    
+    .Home {
+        position: relative;
+        height: 100vh;
+        background: url(images/fashion.png) no-repeat center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .login {
+        position: relative;
+        z-index: 10;
+        background-color: color(from color srgb r g b);
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 800px;
+    }
+    
+    .login h2 {
+        margin-bottom: 20px;
+        color: yellow;
+    }
+    
+    .login form {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 0.2px;
+        color: white;
+    }
+    
+    .login label {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: #3c153b;
+        padding: 8px;
+        width: 200px;
+    }
+    
+    .login input {
+        padding: 6px;
+        margin-bottom: 15px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        width: 400px;
+    }
+    
+    .login button {
+        padding: 10px;
+        background-color: #3c153b;
+        color: gold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        width: 150px;
+    }
+    
+    .login button:hover {
+        color: white;
+        background-color: plum;
+    }
+    
+    .Address {
+        margin-top: 10px;
+        font-size: 12px;
+        color: black;
+    }
+    
+    .women-section {
+        display: none;
+        padding: 80px 50px;
+        background-color: #f9f9f9;
+    }
+    
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: purple;
+    }
+    
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        justify-items: center;
+    }
+    
+    .item {
+        background-color: thistle;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+    }
+    
+    .item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .item h3 {
+        font-size: 1.2rem;
+        color: black;
+        margin: 10px 0 5px;
+    }
+    
+    .item p {
+        font-size: 1rem;
+        color: #555;
+        margin: 4px 0;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+        color: purple;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
